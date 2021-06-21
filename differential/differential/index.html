@@ -13,14 +13,14 @@
         <meta name="author" content="peaceiris">
       
       
-        <link rel="canonical" href="https://mkdocs.peaceiris.com/profil/profil/">
+        <link rel="canonical" href="https://mkdocs.peaceiris.com/differential/differential/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
     
     
       
-        <title>Profil - MkDocs Material Boilerplate</title>
+        <title>Differential Equation - MkDocs Material Boilerplate</title>
       
     
     
@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#differential_equation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Profil
+              Differential Equation
             
           </span>
         </div>
@@ -212,17 +217,18 @@
   
   
     <li class="md-nav__item">
-      <a href="../../differential/differential/index.html" class="md-nav__link">
+      <a href="." class="md-nav__link md-nav__link--active">
         Differential Equation
       </a>
     </li>
   
     <li class="md-nav__item">
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="../../profil/profil/index.html" class="md-nav__link">
         Profil Mahasiswa
       </a>
     </li>
 
+    
   </ul>
 </nav>
                   </div>
@@ -230,22 +236,143 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pengertian" class="md-nav__link">
+    Pengertian
+  </a>
+  
+    <nav class="md-nav" aria-label="Pengertian">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eliminasi_gauss" class="md-nav__link">
+    Eliminasi Gauss
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algoritma_eliminasi_gauss" class="md-nav__link">
+    Algoritma Eliminasi Gauss
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi_python" class="md-nav__link">
+    Implementasi Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output_code" class="md-nav__link">
+    Output Code
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/edit/master/docs_sample/profil/profil.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/edit/master/docs_sample/differential/differential.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Profil</h1>
-                
-                <p><img src="../../assets/images/Profil.jpeg" style="zoom:25%;" /></p>
-<p>Nama : Fatin Zahidah Mas'ud</p>
-<p>NIM : 190411100129</p>
-<p>Mata Kuliah : Komputasi Numerik A</p>
+                <h1 id="differential_equation">Differential Equation<a class="headerlink" href="#differential_equation" title="Permanent link">&para;</a></h1>
+<h2 id="pengertian">Pengertian<a class="headerlink" href="#pengertian" title="Permanent link">&para;</a></h2>
+<p><strong>Persamaan diferensial</strong> atau <strong><em>differential equation</em></strong> adalah persamaan yang menghubungkan satu atau lebih fungsi dan turunannya.</p>
+<p>Dalam aplikasi, fungsi umumnya mewakili kuantitas fisik, turunannya mewakili laju perubahannya, dan persamaan diferensial mendefinisikan hubungan antara keduanya.</p>
+<h3 id="eliminasi_gauss">Eliminasi Gauss<a class="headerlink" href="#eliminasi_gauss" title="Permanent link">&para;</a></h3>
+<p>Metode Euler adalah metode orde pertama, yang berarti bahwa kesalahan lokal (kesalahan per langkah) sebanding dengan kuadrat ukuran langkah, dan kesalahan global (kesalahan pada waktu tertentu) sebanding dengan ukuran langkah.</p>
+<p>Rumus Euler Eksplisit:
+<script type="math/tex; mode=display">
+S(t_{j}+1)=S(t_{j})+(t-{j}+1−t_{j})\dfrac{dS(t_{j})}{dt},
+</script>
+</p>
+<h3 id="algoritma_eliminasi_gauss">Algoritma Eliminasi Gauss<a class="headerlink" href="#algoritma_eliminasi_gauss" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Simpan S0=S(t0)S0=S(t0) dalam sebuah array, SS.</li>
+<li>Hitung S(t1)=S0+hF(t0,S0)S(t1)=S0+hF(t0,S0).</li>
+<li>Simpan S1=S(t1)S1=S(t1) di SS.</li>
+<li>Hitung S(t2)=S1+hF(t1,S1)S(t2)=S1+hF(t1,S1).</li>
+<li>Simpan S2=S(t1)S2=S(t1) di SS.</li>
+<li>⋯⋯</li>
+<li>Hitung S(tf)=Sf−1+hF(tf−1,Sf−1)S(tf)=Sf−1+hF(tf−1,Sf−1).</li>
+<li>Simpan Sf=S(tf)Sf=S(tf) di SS.</li>
+<li>SS adalah aproksimasi solusi untuk masalah nilai awal.</li>
+</ol>
+<h2 id="implementasi_python">Implementasi Python<a class="headerlink" href="#implementasi_python" title="Permanent link">&para;</a></h2>
+<p>Gauss Elimination Code</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-poster&#39;</span><span class="p">)</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="c1"># Define parameters</span>
+<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">t</span><span class="p">,</span> <span class="n">s</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="p">)</span> <span class="c1"># ODE</span>
+<span class="n">h</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># Step size</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">h</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span> <span class="c1"># Numerical grid</span>
+<span class="n">s0</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="c1"># Initial Condition</span>
+
+<span class="c1"># Explicit Euler Method</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+<span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">s0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">s</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">h</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="s1">&#39;bo--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Approximate&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="p">),</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Exact&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Approximate and Exact Solution </span><span class="se">\</span>
+<span class="s1">for Simple ODE&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(t)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;lower right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<h2 id="output_code">Output Code<a class="headerlink" href="#output_code" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/images/Figure_2.png"  /></p>
+<p>Referensi:</p>
+<p>https://en.wikipedia.org/wiki/Euler_method#:~:text=The%20Euler%20method%20is%20a,proportional%20to%20the%20step%20size.</p>
+<p>https://pythonnumericalmethods.berkeley.edu/notebooks/chapter22.03-The-Euler-Method.html</p>
                 
               
               
